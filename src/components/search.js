@@ -8,7 +8,7 @@ const Search = () => {
   const [searchedQuery, setSearchQuery] = useState("");
   const [ErrorMessage, setErrorMessage] = useState(null);
   const [movie, setMovie] = useState(null);
-  const url = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&t=${searchedQuery}`;
+  const url = `https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&t=${searchedQuery}`;
 
   const submitForm = async (e) => {
     e.preventDefault();
