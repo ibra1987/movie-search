@@ -1,0 +1,96 @@
+.movieContainer {
+  width: 60%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #292b2c;
+  border-radius: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+  .movieContainer {
+    flex-direction: column;
+  }
+  .right {
+    min-width: 100%;
+  }
+  img {
+    min-width: 80%;
+  }
+}
+
+.left {
+  width: 100%;
+  padding: 1vh 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.left h1 {
+  display: inline-block;
+  padding: 5px 1em;
+  color: wheat;
+}
+.leftInfos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.9rem;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.leftInfos div {
+  padding: 5px;
+}
+
+.leftInfos span {
+  color: wheat;
+}
+.ul {
+  width: 95%;
+  list-style: none;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  border-top: 1px solid #343a40;
+}
+
+.li {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.li span {
+  color: wheat;
+  display: inline-block;
+  width: 5vw;
+  font-size: 0.9rem;
+  margin-right: 0.5em;
+  padding: 0.5em 0;
+}
+
+.plot {
+  width: 95%;
+  padding: 1em;
+  color: whitesmoke;
+  font-size: 0.9rem;
+  border-top: 1px solid #343a40;
+  line-height: 3vh;
+}
