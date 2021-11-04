@@ -3,9 +3,11 @@
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: #292b2c;
   border-radius: 10px;
+  padding: 1vh 1em;
+  margin-bottom: 2vh;
 }
 
 .right {
@@ -16,17 +18,6 @@
 
 .right img {
   border-radius: 10px;
-}
-@media screen and (max-width: 992px) {
-  .movieContainer {
-    flex-direction: column;
-  }
-  .right {
-    min-width: 100%;
-  }
-  img {
-    min-width: 80%;
-  }
 }
 
 .left {
@@ -49,7 +40,6 @@
   align-items: center;
   font-size: 0.9rem;
   color: whitesmoke;
-  padding: 1em;
 }
 
 .leftInfos div {
@@ -75,6 +65,7 @@
 .li {
   width: 100%;
   font-size: 0.9rem;
+  display: block;
 }
 
 .li span {
@@ -82,7 +73,7 @@
   display: inline-block;
   width: 5vw;
   font-size: 0.9rem;
-  margin-right: 0.5em;
+  margin-right: 2em;
   padding: 0.5em 0;
 }
 
@@ -93,4 +84,22 @@
   font-size: 0.9rem;
   border-top: 1px solid #343a40;
   line-height: 3vh;
+}
+@media screen and (max-width: 992px) {
+  .movieContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+  }
+  .right {
+    width: 100%;
+  }
+  img {
+    width: 90%;
+  }
+
+  .li span {
+    width: 13vw;
+  }
 }

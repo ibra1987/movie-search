@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1vh;
-  width: 100%;
+  margin: auto;
 }
 
 form {
@@ -49,4 +48,23 @@ button:hover {
 .notFound {
   color: red;
   padding: 2em;
+}
+
+@media screen and (max-width: 992px) {
+  .searchContainer {
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
+  .formWrapper {
+    width: 90%;
+  }
+  .searchField {
+    width: 90%;
+  }
+
+  img {
+    width: 80%;
+  }
 }
